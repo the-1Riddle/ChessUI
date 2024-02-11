@@ -1,0 +1,31 @@
+﻿<Window x:Class="chessGui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:chessGui"
+        mc:Ignorable="d"
+        Title="ChessUI" Width="573" SizeToContent="Height"
+        Icon="src/ChessMCE.png"
+        WindowStartupLocation="CenterScreen"
+        Background="#30363d"
+        KeyDown="Window_KeyDown">
+    <Viewbox>
+        <Grid x:Name="BoardGrid"
+              Width="800"
+              Height="800"
+              MouseDown="BoardGrid_MouseDown">
+            <Grid.Background>
+                <ImageBrush ImageSource="src/board.png"></ImageBrush>
+            </Grid.Background>
+            <UniformGrid x:Name="HighlightGrid"
+                         Rows="8"
+                         Columns="8"/>
+            <UniformGrid x:Name="PieceGrid"
+                         Rows="8"
+                         Columns="8"
+                         RenderOptions.BitmapScalingMode="HighQuality"/>
+            <ContentControl x:Name="MenuContainer"></ContentControl>
+        </Grid>
+    </Viewbox>
+</Window>

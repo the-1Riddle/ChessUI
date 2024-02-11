@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="chessGui.pPromotionMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:chessGui"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border Width="275" Height="125" Style="{StaticResource BorderStyle}">
+        <Grid RenderOptions.BitmapScalingMode="HighQuality">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="1.5*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="SELECT A PIECE" Style="{StaticResource TextStyle}" FontSize="28">
+            </TextBlock>
+
+            <UniformGrid Grid.Row="1"
+                          Rows="1" Columns="4"
+                          Cursor="Hand">
+                <Image x:Name="QueenPng" MouseDown="QueenPng_MouseDown" Source="src/queen1.png"/>
+
+                <Image x:Name="BishopPng" MouseDown="BishopPng_MouseDown" Source="src/bishop1.png"/>
+
+                <Image x:Name="RookPng" MouseDown="RookPng_MouseDown" Source="src/rook1.png"/>
+
+                <Image x:Name="KnightPng" MouseDown="KnightPng_MouseDown" Source="src/knight1.png"/>
+            </UniformGrid>
+        </Grid>
+    </Border>
+</UserControl>

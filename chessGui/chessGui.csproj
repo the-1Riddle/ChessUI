@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="src\bishop1.png" />
+    <None Remove="src\bishop2.png" />
+    <None Remove="src\blank.png" />
+    <None Remove="src\Board.png" />
+    <None Remove="src\ChessMCE.png" />
+    <None Remove="src\king1.png" />
+    <None Remove="src\king2.png" />
+    <None Remove="src\knight1.png" />
+    <None Remove="src\knight2.png" />
+    <None Remove="src\PawnB.png" />
+    <None Remove="src\PawnW.png" />
+    <None Remove="src\queen1.png" />
+    <None Remove="src\queen2.png" />
+    <None Remove="src\rook1.png" />
+    <None Remove="src\rook2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\chessLog\chessLog.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="src\bishop1.png" />
+    <Resource Include="src\bishop2.png" />
+    <Resource Include="src\blank.png" />
+    <Resource Include="src\Board.png" />
+    <Resource Include="src\ChessMCE.png" />
+    <Resource Include="src\king1.png" />
+    <Resource Include="src\king2.png" />
+    <Resource Include="src\knight1.png" />
+    <Resource Include="src\knight2.png" />
+    <Resource Include="src\PawnB.png" />
+    <Resource Include="src\PawnW.png" />
+    <Resource Include="src\queen1.png" />
+    <Resource Include="src\queen2.png" />
+    <Resource Include="src\rook1.png" />
+    <Resource Include="src\rook2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Source Code\" />
+  </ItemGroup>
+
+</Project>
